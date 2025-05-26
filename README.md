@@ -15,7 +15,7 @@ The configuration supports multiple brokers, and multiple topics per broker.
 
 The string `$payload` is replaced by the payload received.
 
-For an example look at the provided sample configuration file.
+For an example look at the provided [sample configuration](mqtt-react.yaml) file.
 
 ### Known limitations
 
