@@ -1,0 +1,13 @@
+# $payload will be replaced by the payload of the topic
+
+brokers:
+  - address: "tcp://one.mqtt.broker.com:1883"
+    topics:
+      - name: "some/cool/topic"
+        command: "echo $payload"
+      - name: "anohter/cool/topic"
+        command: "./custom_script.sh"
+  - address: "tcp://test.mosquitto.org:1883"
+    topics:
+      - name: "office/alarm"
+        command: "aplay alarm.wav"
