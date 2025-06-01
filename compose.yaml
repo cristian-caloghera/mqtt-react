@@ -1,0 +1,8 @@
+services:
+  mqtt-react:
+    image: mqtt-react
+    container_name: mqtt-react
+    build: .  # Build from the Dockerfile in the current directory
+    restart: unless-stopped
+    volumes:
+      - ./my-mqtt-react.yaml:/app/mqtt-react.yaml
